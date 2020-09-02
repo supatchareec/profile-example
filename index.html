@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="http://" class="logo">Supatcharee's Profile</a>
+        <div>
+            <a href="http://">Home</a>
+            <a href="http://">About Me</a>
+            <a href="http://">Skills</a>
+            <a href="http://">Portfolio</a>
+            <a href="http://">Work Experence</a>
+            <a href="http://">Contact</a>
+        </div>
+    </nav>
+    <header>
+        <div>
+            <div>
+                <img id="profile" src="profile.jpg" alt="profile">
+
+            </div>
+            <div>
+                <h1>Hello</h1>
+                <h2>I am Supatcharee Chaiya</h2>
+                <p>Computer engineering student</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit id rerum, voluptas adipisci
+                    consequatur possimus illum minima ex fugiat blanditiis consectetur autem repellendus exercitationem
+                    recusandae explicabo. Odit dicta sed repudiandae?</p>
+
+                <div class="social">
+                    <a href="" class="fb-social"></a>
+                    <a href="" class="ig-social"></a>
+                    <a href="" class="in-social"></a>
+                    <a href="mailto:supatcharee_chaiya@kkumail.com" class="email-social"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="tab-style">
+        <h3 class="text-header">About Me</h3>
+        <div class="about-me-div">
+
+            <div>
+                <p>Nickname</p>
+                <ul>
+                    <li>Eng</li>
+                </ul>
+                <p>Gender</p>
+                <ul>
+                    <li>Female</li>
+                </ul>
+                <p>Date of Birth</p>
+                <ul>
+                    <li>November 22th, 1998</li>
+                </ul>
+                <p>Age</p>
+                <ul>
+                    <li>
+                        <p id="age"></p> Years
+                    </li>
+                </ul>
+
+            </div>
+            <div>
+                <p>Address</p>
+                <ul>
+                    <li>Khon Kaen, Thailand</li>
+                </ul>
+                <p>Education</p>
+                <ul>
+                    <li>2012 - 2017 Demonstration school of Khon Kaen University; Khon Kaen, Thailand</li>
+                    <li>2018 - Then Computer engineering of Khon Kaen University; Khon Kaen, Thailand</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="tab-style">
+        <h3 class="text-header">Skills</h3>
+
+        <div class="skils-div about-me-div">
+            <h4>Programming language</h4>
+            <table>
+                <tr>
+                    <td colspan="2">C++ <p>standard</p>
+                    </td>
+                    <td>C <p>standard</p>
+                    </td>
+                    <td>xml <p>standard</p>
+                    </td>
+                    <td colspan="1">React Native <p>Good</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">Python <p>standard</p>
+                    </td>
+                    <td colspan="2">Java <p>Good</p>
+                    </td>
+                    <td colspan="1" rowspan="2">HTML/CSS <p>expert</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">JavaScript <p>Good</p>
+                    </td>
+                    <td>C# <p>standard</p>
+                    </td>
+                </tr>
+                <tr></tr>
+            </table>
+
+        </div>
+    </div>
+    <div class="tab-style">
+        <h3 class="text-header">Portfolio</h3>
+        <p>Null</p>
+    </div>
+    <div class="tab-style">
+        <h3 class="text-header">Work Experence</h3>
+        <p>Null</p>
+    </div>
+    <div class="tab-style contact-div">
+        <h3 class="text-header">Contact</h3>
+        <div>
+            <form action="">
+                <div>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+
+                    </div>
+                    <div>
+                        <label for="email">Email <span>*</span></label>
+                        <input type="text" name="email" id="email" required>
+
+                    </div>
+                </div>
+                <label for="message">Message <span>*</span></label>
+                <textarea name="message" id="message" rows="3"></textarea>
+                <div>
+                    <button id="send_message" type="submit">Send</button>
+                    <button id="reset_form" type="reset">Clear</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="ending">
+        <div class="social">
+            <a href="" class="fb-social"></a>
+            <a href="" class="ig-social"></a>
+            <a href="" class="in-social"></a>
+            <a href="mailto:supatcharee_chaiya@kkumail.com" class="email-social"></a>
+        </div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+    </div>
+</body>
+<script>
+    const messageForm = document.querySelector('form');
+    messageForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        console.log('sub');
+        let r = confirm("Press a button!");
+        if (r == true) {
+            console.log('yes');
+        } else {
+            console.log('no');
+        }
+    })
+</script>
+
+</html>
