@@ -19,9 +19,9 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(#ffb190 0%, #ff4686);
   border-radius: 8px;
 }
+
 nav {
   box-shadow: 0 0 12px rgb(255, 255, 255);
-
   background-color: #373856;
   width: 87vw;
   height: 40px;
@@ -63,10 +63,14 @@ nav > div > a:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.menu-tab {
+  display: none;
+}
+
 header {
   margin-top: 80px;
-  width: 90vw;
-  height: 400px;
+  /* width: 90vw; */
+  /* height: 400px; */
   border-radius: 8px;
   border-left: 8px solid #ffb190;
   border-right: 8px solid #ff4686;
@@ -87,24 +91,29 @@ header {
     -o-linear-gradient(to right, #ffb190 0%, #ff4686 100%);
   background-image: linear-gradient(to right, #ffb190 0%, #ff4686 100%),
     linear-gradient(to right, #ffb190 0%, #ff4686 100%);
-  padding: 8px;
+  padding: 10px;
 }
 header > div {
   background: linear-gradient(#38385c, #24263e);
   border-radius: 4px;
-  height: 364px;
+  min-width: 100%;
   margin-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
 }
 header > div > div {
   width: 48%;
 }
+.text-header {
+  padding: 8px;
+  min-width: 300px;
+}
 #profile {
-  height: 364px;
+  width: 300px;
   object-fit: contain;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-radius: 4px;
+  margin: 8px 8px 0 8px;
 }
 .tab-style {
   background: linear-gradient(#38385c, #24263e);
@@ -133,7 +142,6 @@ header > div > div {
 }
 table {
   border-spacing: 0.5rem;
-  width: 50%;
   height: 300px;
 }
 td {
@@ -174,6 +182,7 @@ td:nth-child(5) {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 form input,
 textarea {
@@ -184,7 +193,7 @@ textarea {
   font-family: "Prompt", sans-serif;
 }
 form input {
-  min-width: 400px;
+  min-width: 300px;
   height: 28px;
 }
 form > div {
@@ -201,7 +210,7 @@ form > div > div {
   margin: 1em;
 }
 textarea {
-  min-width: 400px;
+  min-width: 640px;
   resize: none;
   margin: 0 1em 1em 1em;
 }
@@ -255,14 +264,105 @@ form button {
   cursor: pointer;
 }
 .fb-social {
-  background-image: url('https://image.flaticon.com/icons/svg/174/174848.svg');
+  background-image: url("https://image.flaticon.com/icons/svg/174/174848.svg");
 }
 .ig-social {
-  background-image: url('https://image.flaticon.com/icons/svg/174/174855.svg');
+  background-image: url("https://image.flaticon.com/icons/svg/174/174855.svg");
 }
 .in-social {
-  background-image: url('https://image.flaticon.com/icons/svg/174/174857.svg');
+  background-image: url("https://image.flaticon.com/icons/svg/174/174857.svg");
 }
 .email-social {
-  background-image: url('https://image.flaticon.com/icons/svg/732/732200.svg');
+  background-image: url("https://image.flaticon.com/icons/svg/732/732200.svg");
+}
+@media screen and (max-width: 1060px) {
+  nav > div {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 930px) {
+  nav > div {
+    display: none;
+  }
+  .menu-tab {
+    display: block;
+    background-image: url("https://image.flaticon.com/icons/svg/812/812847.svg");
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 770px) {
+  textarea {
+    min-width: 300px;
+  }
+}
+@media screen and (max-width: 435px) {
+  .text-header {
+    min-width: 330px;
+  }
+  #profile {
+    width: 330px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .text-header {
+    min-width: 320px;
+  }
+  #profile {
+    width: 320px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .text-header {
+    min-width: 286px;
+  }
+  #profile {
+    width: 286px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .text-header {
+    min-width: 260px;
+  }
+  #profile {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .text-header {
+    min-width: 236px;
+  }
+  #profile {
+    width: 236px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .logo {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .text-header {
+    min-width: 200px;
+  }
+  #profile {
+    width: 200px;
+  }
+  .social > a {
+    margin: 0.6rem;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  form input {
+    min-width: 240px;
+  }
+  textarea {
+    min-width: 240px;
+  }
+  table {
+    height: 240px;
+  }
 }
